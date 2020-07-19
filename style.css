@@ -1,0 +1,10 @@
+.centeredDiv {
+    text-align: center;
+    min-height: 600px;
+    min-width: 600px;
+
+}
+
+.tictactoegrid {
+    display: inline-grid;
+}
