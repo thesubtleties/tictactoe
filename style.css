@@ -1,10 +1,44 @@
-.centeredDiv {
-    text-align: center;
-    min-height: 600px;
-    min-width: 600px;
+.container {
+    display: grid;
+    grid-template-columns: auto 600px auto;
+}
 
+.centeredDiv {
+    min-height: 700px;
+    min-width: 600px;
+    background-color: rgba(75, 75, 230, 0.329);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: 100px 600px;
+}
+
+.gamenamearea {
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px rgba(226, 122, 240, 0.349);
 }
 
 .tictactoegrid {
-    display: inline-grid;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    height: 600px;
+    width: 600px;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 20px;
 }
+
+.letterarea {
+    font-size: 100px;
+}
+
+.x {
+    color: rgba(165, 11, 11, 0.479);
+}
+
+.o {
+    color: rgba(10, 10, 194, 0.5);
+}
+
