@@ -1,6 +1,6 @@
 .container {
     display: grid;
-    grid-template-columns: auto 600px auto;
+    grid-template-columns: 1fr 600px 1fr;
 }
 
 .centeredDiv {
@@ -10,7 +10,22 @@
     display: grid;
     align-items: center;
     justify-items: center;
-    grid-template-rows: 100px 600px;
+    grid-template-rows: 100px 600px 50px 50px 85px;
+
+}
+
+.leftmargin {
+    display: inline-grid;
+    grid-template-rows: 65px;
+    justify-items: center;
+    
+}
+.scoreboardtitle {
+    font-size: 44px;
+}
+.scores {
+    font-size: 22px;
+    justify-self: left;
 }
 
 .gamenamearea {
@@ -25,13 +40,22 @@
     grid-template-rows: 33% 33% 33%;
     height: 600px;
     width: 600px;
-    justify-items: center;
-    align-items: center;
-    grid-gap: 20px;
+    max-width: 600px;
+    justify-items: stretch;
+    align-items: stretch;
+    
 }
 
 .letterarea {
     font-size: 100px;
+    text-align: center;
+    min-height: 200px;
+    min-width: 200px;
+    line-height: 200px;
+
+}
+.letterarea:hover {
+    background-color: rgba(127, 20, 199, 0.342);
 }
 
 .x {
@@ -40,5 +64,47 @@
 
 .o {
     color: rgba(10, 10, 194, 0.5);
+}
+
+.nameArea {
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.24);
+}
+#newGame {
+    background-color: rgba(201, 74, 252, 0.555);
+    color: white;
+    font-size: 44px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+}
+#newGame:hover {
+    background-color: rgba(202, 74, 252, 0.89);
+}
+#newGame:active {
+    box-shadow: 0px 0px 8px white;
+}
+#newGame:focus {
+    outline: none;
+
+}
+#namebutton {
+    background-color: rgba(40, 142, 160, 0.555);
+    color: white;
+    font-size: 33px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+}
+#namebutton:hover {
+    background-color: rgba(74, 252, 228, 0.384);
+}
+#namebutton:active {
+    box-shadow: 0px 0px 8px white;
+}
+#namebutton:focus {
+    outline: none;
+
 }
 

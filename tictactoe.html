@@ -10,14 +10,20 @@
 <body>
 <div class = "container">
 <div class = "leftmargin">
+  <div class = "scoreboardtitle">
+    scoreboard
+  </div>
+  <div class = "scores">
+    
+  </div>
 </div>
 <div class = "centeredDiv">
   <div class = "gamenamearea">
     Tic Tac Toe
   </div>
 <div class = "tictactoegrid">
-  <div class = "letterarea x" id = "0">X</div>
-  <div class = "letterarea o" id = "1">O</div>
+  <div class = "letterarea" id = "0"></div>
+  <div class = "letterarea" id = "1"></div>
   <div class = "letterarea" id = "2"></div>
   <div class = "letterarea" id = "3"></div>
   <div class = "letterarea" id = "4"></div>
@@ -27,7 +33,21 @@
   <div class = "letterarea" id = "8"></div>
   
 </div>
+<div class = "nameArea">
+  <div>
+    <label for="player1">Player 1:</label>
+    <input type="text" name="player1enter" id="player1enter" required>
+    <label for="player2">Player 2:</label>
+    <input type="text" name="player2enter" id="player2enter" required>
+  </div>
 
+</div>
+<div class = "enternames">
+  <button id="namebutton">Enter Names</button>
+</div>
+<div class = "newGameButton">
+  <button id = "newGame">New Game?</button>
+</div>
 </div>
 <div class = "rightmargin"> 
 </div>
